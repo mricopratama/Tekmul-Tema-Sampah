@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 169, in script
+    r "Berdasarkan analisis data, program ini berpotensi mengurangi volume sampah total sekolah hingga 50% dan menciptakan sumber pendapatan baru dari bank sampah serta pupuk kompos. Ini bukan program kebersihan, Pak. Ini adalah laboratorium hidup bagi siswa untuk menjadi pemimpin masa depan yang berkelanjutan."
+TypeError: %d format: a number is required, not TagQuotingDict
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 169, in script
+    r "Berdasarkan analisis data, program ini berpotensi mengurangi volume sampah total sekolah hingga 50% dan menciptakan sumber pendapatan baru dari bank sampah serta pupuk kompos. Ini bukan program kebersihan, Pak. Ini adalah laboratorium hidup bagi siswa untuk menjadi pemimpin masa depan yang berkelanjutan."
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\exports\sayexports.py", line 121, in say
+    what = what % tag_quoting_dict
+TypeError: %d format: a number is required, not TagQuotingDict
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.7.25031702
+Tekmul Tema Sampah 1.0
+Wed Jul  9 20:24:10 2025

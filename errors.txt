@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 36: expected statement.
+    config.speaker_vignette = Solid("#00000099")
+                            ^
+
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Wed Jul  9 20:49:58 2025
