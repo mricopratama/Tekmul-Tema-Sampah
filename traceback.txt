@@ -1,24 +1,53 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 169, in script
-    r "Berdasarkan analisis data, program ini berpotensi mengurangi volume sampah total sekolah hingga 50% dan menciptakan sumber pendapatan baru dari bank sampah serta pupuk kompos. Ini bukan program kebersihan, Pak. Ini adalah laboratorium hidup bagi siswa untuk menjadi pemimpin masa depan yang berkelanjutan."
-TypeError: %d format: a number is required, not TagQuotingDict
+  File "game/script.rpy", line 213, in script
+    "Avatar AI itu muncul di layar laptop."
+Exception: Image 'raka' does not accept attributes 'senang'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 169, in script
-    r "Berdasarkan analisis data, program ini berpotensi mengurangi volume sampah total sekolah hingga 50% dan menciptakan sumber pendapatan baru dari bank sampah serta pupuk kompos. Ini bukan program kebersihan, Pak. Ini adalah laboratorium hidup bagi siswa untuk menjadi pemimpin masa depan yang berkelanjutan."
+  File "game/script.rpy", line 213, in script
+    "Avatar AI itu muncul di layar laptop."
   File "D:\Ren Py\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
     Say.execute(self)
   File "D:\Ren Py\renpy-8.3.7-sdk\renpy\ast.py", line 623, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\exports\sayexports.py", line 121, in say
-    what = what % tag_quoting_dict
-TypeError: %d format: a number is required, not TagQuotingDict
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\character.py", line 1471, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\character.py", line 1117, in do_display
+    display_say(who,
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\character.py", line 814, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\core.py", line 2748, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\image.py", line 540, in visit
+    self.find_target()
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "D:\Ren Py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'raka' does not accept attributes 'senang'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 Tekmul Tema Sampah 1.0
-Wed Jul  9 20:24:10 2025
+Thu Jul 10 07:55:15 2025
